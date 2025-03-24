@@ -1,0 +1,37 @@
+
+/* Cambiar color de la flecha del ComboBox */
+.combo-box .arrow {
+    -fx-background-color: black; 
+    -fx-font-family: "Trebuchet MS";
+    -fx-font-size: 12px;
+}
+
+/* Cambiar el color de fondo de las opciones */
+.combo-box .list-cell {
+    -fx-background-color: #4a90e2;
+    -fx-text-fill: black;
+    -fx-font-family: "Trebuchet MS";
+    -fx-font-size: 12px;
+}
+
+/* Cambiar el color cuando pasas el mouse por encima */
+.combo-box .list-cell:hover {
+    -fx-background-color: white;
+}
+
+/* Cambiar el color cuando un item está seleccionado */
+.combo-box .list-cell:selected {
+    -fx-background-color:  #4a90e2;
+    -fx-text-fill: black;
+}
+
+/* Opcional: cambiar el color del cuadrado */
+.check-box .box {
+    -fx-background-color: #4a90e2;
+}
+
+/* Cambiar el color del "tick" (✔) cuando está seleccionado */
+.check-box:selected .mark {
+    -fx-background-color: black; 
+}
+
