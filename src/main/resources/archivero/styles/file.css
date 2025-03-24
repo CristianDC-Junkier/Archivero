@@ -1,0 +1,13 @@
+
+
+/* Estilo para los títulos de las pestañas */
+.tab-pane .tab-header-area .tab {
+    -fx-background-color: #4a90e2;  
+}
+
+.tab-pane .tab-header-area .tab .tab-label {
+    -fx-font-family: "Trebuchet MS"; 
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;  
+    -fx-text-fill: white; 
+}

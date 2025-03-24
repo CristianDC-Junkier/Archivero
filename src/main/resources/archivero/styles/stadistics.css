@@ -1,0 +1,15 @@
+
+/* Cambiar la fuente y tamaño del texto dentro del ComboBox */
+.combo-box .arrow{
+    -fx-font-family: "Trebuchet MS";
+    -fx-font-size: 17px;
+    -fx-text-fill: black;
+    -fx-background-color: black; 
+}
+
+/* Cambiar la fuente y tamaño del texto dentro de la lista desplegable */
+.combo-box .list-cell {
+    -fx-font-family: "Trebuchet MS";
+    -fx-font-size: 17px;
+    -fx-text-fill: black;
+}

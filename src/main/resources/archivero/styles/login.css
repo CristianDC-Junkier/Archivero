@@ -1,0 +1,8 @@
+
+.caja_login {
+    -fx-border-color: #4a90e2; /* Color del borde */
+    -fx-border-width: 0 0 2px 0; /* Solo borde inferior */
+    -fx-background-color: transparent; /* Fondo transparente */
+    -fx-text-fill: white;
+}
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="680.0" style="-fx-background-color: black;" stylesheets="@../styles/login.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="archivero.app.control.LoginController">
+   <children>
+      <ImageView fitHeight="417.0" fitWidth="295.0" layoutX="384.0" layoutY="33.0" pickOnBounds="true">
+         <image>
+            <Image url="@../iconos/archivo.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="462.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../iconos/ayuntamiento%20de%20almonte%20a%20color%20letras%20blancas.png" />
+         </image>
+      </ImageView>
+      <Text fill="#4a90e2" fontSmoothingType="LCD" layoutX="91.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-style: italic; -fx-font-weight: bold;" text="Ayuntamiento de Almonte" textAlignment="CENTER" wrappingWidth="205.98313331604004">
+         <font>
+            <Font name="Old English Text MT" size="36.0" />
+         </font>
+      </Text>
+      <Text fill="#4a90e2" layoutX="122.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Archivo">
+         <font>
+            <Font name="Theonory free version Regular" size="30.0" />
+         </font>
+      </Text>
+      <Line endX="239.0" endY="-1.52587890625E-5" layoutX="124.0" layoutY="210.0" startX="-100.0" stroke="#4a90e2" />
+      <Line endX="244.79998779296875" layoutX="122.0" layoutY="326.0" startX="-100.0" stroke="#4a90e2" />
+      <Button cache="true" layoutX="19.0" layoutY="346.0" mnemonicParsing="false" onAction="#continuar" prefHeight="31.0" prefWidth="124.0" style="-fx-background-color: #4a90e2; -fx-text-fill: black;" text="Identificarse">
+         <font>
+            <Font name="Trebuchet MS Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button cache="true" layoutX="260.0" layoutY="346.0" mnemonicParsing="false" onAction="#salir" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: #4a90e2; -fx-text-fill: black;" text="Salir">
+         <font>
+            <Font name="Trebuchet MS Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button cache="true" layoutX="96.0" layoutY="404.0" mnemonicParsing="false" onAction="#anonimo" prefHeight="31.0" prefWidth="215.0" style="-fx-background-color: #4a90e2; -fx-text-fill: black;" text="Entrar Anónimamente">
+         <font>
+            <Font name="Trebuchet MS Bold" size="17.0" />
+         </font>
+      </Button>
+      <GridPane layoutX="21.0" layoutY="237.0" prefHeight="62.0" prefWidth="340.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="165.199951171875" minWidth="10.0" prefWidth="141.199951171875" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.4000244140625" minWidth="10.0" prefWidth="198.800048828125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text fill="#4a90e2" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario:" wrappingWidth="123.58304786682129">
+               <font>
+                  <Font name="Trebuchet MS" size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#4a90e2" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña:" wrappingWidth="123.58304786682129" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Trebuchet MS" size="20.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usuario" prefHeight="26.0" prefWidth="111.0" styleClass="caja_login" stylesheets="@../styles/login.css" GridPane.columnIndex="1" />
+            <PasswordField fx:id="contrasena" prefHeight="26.0" prefWidth="134.0" styleClass="caja_login" stylesheets="@../styles/login.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+      <Pane fx:id="barraArriba" layoutY="-5.0" prefHeight="38.0" prefWidth="680.0" style="-fx-background-color: #4a90e2;">
+         <children>
+            <Button layoutX="636.0" layoutY="5.0" mnemonicParsing="false" onAction="#salir" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: transparent;" text="X">
+               <font>
+                  <Font name="Bauhaus 93" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="599.0" layoutY="5.0" mnemonicParsing="false" onAction="#minimizar" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: transparent;" text="_">
+               <font>
+                  <Font name="Bauhaus 93" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

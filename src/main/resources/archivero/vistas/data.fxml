@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="450.0" style="-fx-background-color: black;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="archivero.app.control.DataController">
+   <children>
+      <Pane fx:id="barraArriba" prefHeight="38.0" prefWidth="450.0" style="-fx-background-color: #4a90e2;">
+         <children>
+            <Button layoutX="401.0" layoutY="1.0" mnemonicParsing="false" onAction="#salir" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: transparent;" text="X">
+               <font>
+                  <Font name="Bauhaus 93" size="15.0" />
+               </font>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </Button>
+            <Button layoutX="371.0" layoutY="1.0" mnemonicParsing="false" onAction="#minimizar" prefHeight="34.0" prefWidth="40.0" style="-fx-background-color: transparent;" text="_">
+               <font>
+                  <Font name="Bauhaus 93" size="15.0" />
+               </font>
+               <padding>
+                  <Insets bottom="10.0" top="5.0" />
+               </padding>
+            </Button>
+         </children>
+      </Pane>
+      <Button cache="true" layoutX="116.0" layoutY="115.0" mnemonicParsing="false" onAction="#importar" prefHeight="31.0" prefWidth="217.0" style="-fx-background-color: #4a90e2; -fx-text-fill: black;" text="Importar Fichero Data">
+         <font>
+            <Font name="Trebuchet MS Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button cache="true" layoutX="173.0" layoutY="310.0" mnemonicParsing="false" onAction="#atras" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: #4a90e2; -fx-text-fill: black;" text="Atrás">
+         <font>
+            <Font name="Trebuchet MS Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button cache="true" layoutX="116.0" layoutY="212.0" mnemonicParsing="false" onAction="#exportar" prefHeight="31.0" prefWidth="218.0" style="-fx-background-color: #4a90e2; -fx-text-fill: black;" text="Exportar Fichero Data">
+         <font>
+            <Font name="Trebuchet MS Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
