@@ -11,8 +11,8 @@ package archivero.app;
  */
 public class UsuarioController {
 
-    private static final String contrasena = "Alm0nte2025!";
-    private static final String nombre = "aytoAlmonte";
+    private static final String contrasena = "";
+    private static final String nombre = "";
     
     /** 
      * Valor que se utiliza para identificar si 
